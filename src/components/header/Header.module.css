@@ -41,3 +41,18 @@
     }
 
 }
+
+
+
+@media screen and (max-width: 992px) and (min-width:768px){
+    .nav{
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    .kasaHead{
+        height: 51px;
+        width: 158px;
+    }
+}

@@ -7,6 +7,8 @@ import  GenericInfo  from '../../components/genericInfo/GenericInfo';
 import { useParams } from "react-router-dom";
 import Datas from '../../data/data'
 
+import styles from "./Accomodation.module.css"
+
 
 
 
@@ -35,7 +37,7 @@ export default function Housing() {
             <GenericInfo accomodationId={monObjet} />
             <Collapse title={'Description'} content={description} />
             <Collapse title={'Équipements'} content={equipments.map((eq, spe) => (
-                <li key={spe}>{eq}</li>
+                <li className={styles.li} key={spe}>{eq}</li>
             ))} />
         </>
     );
