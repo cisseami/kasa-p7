@@ -1,0 +1,23 @@
+.homeBanner{
+    position: relative;
+    padding-inline: 2rem;
+    background-image: url("../../assets/img2.png") ;
+    background-size: cover ;
+    background-position: center;
+    min-height: 140px;
+    margin: auto;
+    border-radius: 2rem;
+    display: grid;
+    place-items: center;
+    color: white;
+    margin-bottom: 2rem;
+    max-width: 100%;
+}
+
+
+
+.homeBanner::before{
+    position: absolute;
+    content: "";
+    inset: 0;
+}

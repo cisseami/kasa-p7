@@ -1,0 +1,61 @@
+.appartement_des {
+    margin-bottom: 2.5rem;
+}
+
+
+.description_title {
+    background-color: #ff6060;
+    color: white;
+    padding: 0.7em 1rem;
+    border-radius: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.des_title {
+    font-size: 18px;
+}
+
+
+.chevron {
+    transition: all 0.2s ease-in-out;
+}
+
+.chevron_up {
+    transform: rotate(0deg);
+}
+
+.chevron_down {
+    transform: rotate(180deg);
+}
+
+
+.collapse_content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    letter-spacing: 1px;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    padding: 1rem;
+    letter-spacing: 1px;
+    font-size: 18px;
+    z-index: -1;
+    position: relative;
+    margin-top: -5px;
+    color: #FF6060;
+    background-color: #F7F7F7;
+    border-radius: 0 0 1rem 1rem;
+    transition: visibility 0.5s ease-in-out,
+        opacity 0.5s ease-in-out,
+        height 0.2s ease-in-out;
+}
+
+
+.collapse_content_hidden {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+}
