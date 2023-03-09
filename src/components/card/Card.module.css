@@ -26,11 +26,12 @@
     margin-block-end: 0.5rem;
     color: white;
     font-size: 18px;
-
+    
     Width: 300px;
     Height: 52px;
-    position: absolute;
     font-weight: 500;
+    position: relative;
+    bottom: 6rem;
 }
 
 
