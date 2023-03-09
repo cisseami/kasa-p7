@@ -21,8 +21,8 @@ export default function Housing() {
     const monObjet = accomodationId[0]
 
     useEffect(() => {
-        const monObjet = Datas.filter(data => data.id === identity);
-        setImageSlider(monObjet.pictures);
+        const accomodationId = Datas.filter(data => data.id === identity);
+        setImageSlider(accomodationId[0].pictures);
     }, [identity]);
 
 
@@ -36,8 +36,8 @@ export default function Housing() {
             <Carrousel imageSlider={imageSlider} />
             <GenericInfo accomodationId={monObjet} />
             <Collapse title={'Description'} content={description} />
-            <Collapse title={'Équipements'} content={equipments.map((eq, id) => (
-                <li className={styles.li} key={id}>{eq}</li>
+            <Collapse title={'Équipements'} content={equipments.map((eq, spe) => (
+                <li className={styles.li} key={spe}>{eq}</li>
             ))} />
         </>
     );
