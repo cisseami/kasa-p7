@@ -1,10 +1,10 @@
-.about_main{
+.aboutMain{
     padding-inline: 3rem ;
 }
 
 
 @media screen and (max-width: 768px) and (min-width: 320px){
-    .about_main{
+    .aboutMain{
         padding-inline: 0  ;
         margin-bottom: 4rem;
     }

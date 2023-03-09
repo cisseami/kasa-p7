@@ -1,8 +1,8 @@
 import React from 'react'
 import Collapse from '../../components/collapse/Collapse'
 
-import "./About.css"
 import AboutImage from "../../components/aboutImage/AboutImage"
+import styles from "./About.module.css"
 
 
 
@@ -36,10 +36,10 @@ export default function about() {
 	return (
 		<>
 			<AboutImage />
-			<main className='about_main'>
+			<main className={styles.about_main}>
 				{aboutDatas.map(data => {
 					return (
-						<div key={data.id} className="about_main_collapse">
+						<div key={data.id} className={styles.aboutMain}>
 							<Collapse title={data.title} content={data.content} />
 						</div>
 					)

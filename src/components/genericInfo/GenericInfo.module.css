@@ -12,29 +12,29 @@
     font-size: 18px;
 }
 
-.appartement-header{
+.appartementHeader{
     display: flex;
     margin-bottom: 2rem;
 }
 
-.appartement-title{
+.appartementTitle{
     flex-grow: 1; /* a le droit de grossir*/
 }
 
-.appartement-owner-details{
+.appartementOwnerDetails{
     display: flex;
     gap: 0.5em;
     margin-bottom: 2rem;
 
 }
-.appartement-owner-badge{
+.appartementOwnerBadge{
     height: 64px;
     width: 64px;
     border-radius: 50%;
     background-color: #C4C4C4;
 }
 
-.appartement-owner-stars{
+.appartementOwnerStars{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,21 +50,16 @@
     font-size: 18px;
     
 }
-.on{
-    color: #ff6060;
-}
-.off{
-    color: #E3E3E3;
-}
 
-.appartement-tags{
+
+.appartementTags{
     display: flex;
     gap: 1rem;
 }
 
 
 
-.appartement-tag{
+.appartementTag{
     background-color: #ff6060;
     color: white;
     padding: 0.3em 1em;
@@ -73,35 +68,31 @@
     width: max-content;
 }
 
-.appartement-owner{
+.appartementOwner{
     padding-top: 2.5rem;
     display: flex;
     flex-direction: column;
 }
 
 
-li{
-    list-style-type: none;
-}
-
 
 
 @media screen and (max-width: 768px) and (min-width: 320px){
-    .appartement-header{
+    .appartementHeader{
         display: flex;
         flex-direction: column;
     }
 
-    .appartement-owner{
+    .appartementOwner{
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .appartement-owner-details{
+    .appartementOwnerDetails{
         order: 1;
     }
 
-    .appartement-tags{
+    .appartementTags{
         flex-wrap: wrap;
     }
 }

@@ -12,7 +12,7 @@
 }
 
 
-.back_home {
+.backHome {
     font-weight: 400;
     font-size: 18px;
     border-bottom: #ff6060 1px solid;
@@ -34,7 +34,7 @@
         font-size: 18px;
     }
 
-    .back_home {
+    .backHome {
         font-size: 15px;
     }
 }

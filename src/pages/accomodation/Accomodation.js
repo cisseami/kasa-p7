@@ -9,8 +9,6 @@ import Datas from '../../data/data'
 
 
 
-import "./Accomodation.css"
-
 
 export default function Housing() {
 

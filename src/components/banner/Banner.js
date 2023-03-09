@@ -1,11 +1,12 @@
 import React from "react";
-import "./Banner.css"
+
+import styles from "./Banner.module.css"
 
 
 export default function Banner() {
   return (
-    <div className="banner">
-        <h1 className="anywhere">Chez vous, partout et ailleurs</h1>
+    <div className={styles.banner}>
+        <h1 className={styles.anywhere}>Chez vous, partout et ailleurs</h1>
     </div>
   )
 }
