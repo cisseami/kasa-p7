@@ -1,9 +1,9 @@
-.appartement_des {
+.appartementDes {
     margin-bottom: 2.5rem;
 }
 
 
-.description_title {
+.descriptionTitle {
     background-color: #ff6060;
     color: white;
     padding: 0.7em 1rem;
@@ -13,7 +13,7 @@
     align-items: center;
 }
 
-.des_title {
+.desTitle {
     font-size: 18px;
 }
 
@@ -22,16 +22,16 @@
     transition: all 0.2s ease-in-out;
 }
 
-.chevron_up {
+.chevronUp {
     transform: rotate(0deg);
 }
 
-.chevron_down {
+.chevronDown {
     transform: rotate(180deg);
 }
 
 
-.collapse_content {
+.collapseContent {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -54,7 +54,7 @@
 }
 
 
-.collapse_content_hidden {
+.collapseContentHidden {
     visibility: hidden;
     opacity: 0;
     height: 0;

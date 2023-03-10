@@ -1,4 +1,4 @@
-.cont-car{
+.contCar{
     margin-top: 2rem;
     position: relative;
 }
@@ -28,12 +28,12 @@
     opacity: 1 !important;
 }
 
-.arrow-right{
+.arrowRight{
     right: 25px;
 }
 
 
-.arrow-left{
+.arrowLeft{
     left: 25px;
 }
 
@@ -47,7 +47,7 @@
     cursor: pointer;
 }
 
-.count-picture{
+.countPicture{
     position: absolute;
     bottom: 25px;
     left: 50%;

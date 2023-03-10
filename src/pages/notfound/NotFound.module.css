@@ -37,4 +37,8 @@
     .backHome {
         font-size: 15px;
     }
+
+    .error{
+        margin-top: 6rem;
+    }
 }

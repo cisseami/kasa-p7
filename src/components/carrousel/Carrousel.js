@@ -1,7 +1,8 @@
-import './Carrousel.css'
+
 import ArrowRight from '../../assets/chevron-right.png'
 import ArrowLeft from '../../assets/chevron-left.png'
 import { useState } from 'react'
+import styles from "./Carrousel.module.css"
 
 export default function Slider({ imageSlider }) {
 
@@ -10,7 +11,7 @@ export default function Slider({ imageSlider }) {
     const [currentPicture, setCurrentPicture] = useState(0)
     
     const getClassName = (i) => {
-        if (i === currentPicture) return "show";
+        if (i === currentPicture) return `${styles.show}`;
         return "";
     }
 
@@ -28,14 +29,14 @@ export default function Slider({ imageSlider }) {
     }
 
     return (
-        <div className='cont-car'>
-            <div className='carrou'>
+        <div className={styles.contCar}>
+            <div className={styles.carrou}>
                 {pictures.map((pic, i) =>
-                    <img id='coo' key={pic} src={pic} alt="appartement" className={getClassName(i)}></img>)}
+                    <img id={styles.coo} key={pic} src={pic} alt={styles.appartement} className={getClassName(i)}></img>)}
             </div>
-            <img className='arrow arrow-right' src={ArrowRight} alt="next" onClick={moveToNext}></img>
-            <img className='arrow arrow-left' src={ArrowLeft} alt="previous" onClick={moveToPrevious}></img>
-            <p className='count-picture'>{currentPicture + 1} / {imageSlider.length}</p>
+            <img className={`${styles.arrow } ${styles.arrowRight}`} src={ArrowRight} alt="next" onClick={moveToNext}></img>
+            <img className={`${styles.arrow } ${styles.arrowLeft}`} src={ArrowLeft} alt="previous" onClick={moveToPrevious}></img>
+            <p className={styles.countPicture}>{currentPicture + 1} / {imageSlider.length}</p>
         </div>
     )
 
