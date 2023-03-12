@@ -5,7 +5,7 @@ import styles from "./Card.module.css"
 
 export default function Card({id, title, cover}) {
     return (
-        <Link to = {`/kasa/${id}`} className={styles.house_link}> 
+        <Link to = {`/${id}`} className={styles.house_link}> 
             <div className={styles.house} >
                 <img className={styles.house_img} src={cover} alt={title} />
 

@@ -3,7 +3,9 @@ import Collapse from '../../components/collapse/Collapse'
 
 import AboutImage from "../../components/aboutImage/AboutImage"
 import styles from "./About.module.css"
-
+import Header from '../../components/header/Header'
+import Footer from '../../components/footer/Footer'
+import Main from '../../components/main/Main'
 
 
 
@@ -35,17 +37,21 @@ export default function about() {
 
 	return (
 		<>
-			<AboutImage />
-			<main className={styles.about_main}>
-				{aboutDatas.map(data => {
-					return (
-						<div key={data.id} className={styles.aboutMain}>
-							<Collapse title={data.title} content={data.content} />
-						</div>
-					)
-				}
-				)}
-			</main>
+			<Header/>
+			<Main>
+				<AboutImage />
+				<main className={styles.about_main}>
+					{aboutDatas.map(data => {
+						return (
+							<div key={data.id} className={styles.aboutMain}>
+								<Collapse title={data.title} content={data.content} />
+							</div>
+						)
+					}
+					)}
+				</main>
+			</Main>
+			<Footer/>
 		</>
 	)
 }
