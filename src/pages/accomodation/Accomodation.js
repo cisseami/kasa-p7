@@ -28,8 +28,8 @@ export default function Housing() {
     useEffect(() => {
         const accomodationId = Datas.filter(data => data.id === identity);
         setImageSlider(monObjet !== undefined ? accomodationId[0].pictures : null);
-        // eslint-disable-next-line
-    }, []);
+        
+    }, [monObjet, identity]);
 
 
 
