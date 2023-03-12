@@ -11,8 +11,8 @@ import styles from "./Accomodation.module.css"
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import Main from '../../components/main/Main'
+import NotFound from './../notfound/NotFound'
 
-import Home from './../home/Home'
 
 
 
@@ -50,6 +50,6 @@ export default function Housing() {
             </Main>
             <Footer />
         </>
-                ) : <Home/>
+                 ) : <NotFound/>
     );
 }

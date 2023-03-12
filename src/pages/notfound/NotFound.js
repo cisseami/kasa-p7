@@ -15,7 +15,7 @@ export default function error() {
         <div className={styles.error}>
           <h1 className={styles.notFound}>404</h1>
           <h2 className={styles.anounce}>Oups! La page que vous demandez n'existe pas.</h2>
-          <Link to="/home" >
+          <Link to="/" >
             <p className={styles.backHome}>Retourner sur la page d'accueil</p>
           </Link>
         </div>

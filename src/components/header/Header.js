@@ -12,7 +12,7 @@ export default function Header() {
         <div className={styles.header}>
             <img className={styles.kasaHead} src={Logo} alt="logo" />
             <div className={styles.nav}>
-                <Link to="/home" className={currentPage === '/home' ? `${styles.effective}` : `${styles.noneEffective}`} >
+                <Link to="/" className={currentPage === '/' ? `${styles.effective}` : `${styles.noneEffective}`} >
                     <div className={styles.accueil}>Accueil</div>
                 </Link>
                 <Link to="/about" className={currentPage === '/about' ? `${styles.effective}` : `${styles.noneEffective}`}>
