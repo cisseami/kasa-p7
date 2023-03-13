@@ -6,7 +6,6 @@
     width: 340px;
     height: 340px;
     box-shadow: 0 0 20px #0000002e;
-
 }
 
 .house_img {
@@ -17,9 +16,6 @@
     height: 340px;
     position: relative;
 }
-
-
-
 
 .house_name {
     margin-inline-start: 0.5rem;
@@ -34,14 +30,11 @@
     bottom: 6rem;
 }
 
-
 @media screen and (max-width: 768px) and (min-width: 320px)  {
     .house {
         width: 100% !important;
     }
-
-
-
+    
     .house_name {
         width: 264px;
         height: 50px;

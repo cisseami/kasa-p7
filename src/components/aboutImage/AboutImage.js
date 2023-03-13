@@ -6,7 +6,7 @@ import styles from "./AboutImage.module.css"
 export default function aboutImage() {
   return (
     <>
-        <img className={styles.nature} src ={Mount} alt="images"/>
+      <img className={styles.nature} src={Mount} alt="images" />
     </>
   )
 }

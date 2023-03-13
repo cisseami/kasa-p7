@@ -1,13 +1,11 @@
 import React from 'react'
-
 import Header from '../../components/header/Header'
-
 import { Link } from "react-router-dom"
 import styles from "./NotFound.module.css"
-
 import Main from '../../components/main/Main'
 
 export default function error() {
+
   return (
     <>
       <Header />

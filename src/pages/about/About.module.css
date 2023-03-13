@@ -2,7 +2,6 @@
     padding-inline: 3rem ;
 }
 
-
 @media screen and (max-width: 768px) and (min-width: 320px){
     .aboutMain{
         padding-inline: 0  ;

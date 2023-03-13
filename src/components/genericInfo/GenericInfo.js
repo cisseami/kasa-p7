@@ -3,15 +3,13 @@ import starGrey from '../../assets/star-grey.png';
 import starRed from '../../assets/star-red.png';
 import styles from "./GenericInfo.module.css"
 
-export default function GenericInfo(props){
-
-
+export default function GenericInfo(props) {
 
     const accomodationId = props.accomodationId
     const name = accomodationId.host.name.split(' ');
     const rating = accomodationId.rating;
 
-    return(
+    return (
         <div>
             <div className={styles.appartementHeader}>
                 <div className={styles.appartementTitle}>

@@ -1,17 +1,13 @@
-import { createBrowserRouter, RouterProvider} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/home/Home";
-
 import Accomodation from "./pages/accomodation/Accomodation"
 import About from "./pages/about/About"
 import Notfound from "./pages/notfound/NotFound"
 
 
-
-
 export const router = createBrowserRouter([
 
     {
-        
         errorElement: <Notfound />,
         children: [
             {
@@ -27,7 +23,6 @@ export const router = createBrowserRouter([
             {
                 path: "/about",
                 element: <About />
-
             },
         ]
     },

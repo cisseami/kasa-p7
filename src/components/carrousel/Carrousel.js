@@ -1,4 +1,3 @@
-
 import ArrowRight from '../../assets/chevron-right.png'
 import ArrowLeft from '../../assets/chevron-left.png'
 import { useState } from 'react'
@@ -34,15 +33,13 @@ export default function Slider({ imageSlider }) {
                 {pictures.map((pic, i) =>
                     <img id={styles.coo} key={pic} src={pic} alt={styles.appartement} className={getClassName(i)}></img>)}
             </div>
-            {pictures.length > 1 && 
+            {pictures.length > 1 &&
                 <>
-                    <img className={`${styles.arrow } ${styles.arrowRight}`} src={ArrowRight} alt="next" onClick={moveToNext}></img>
-                    <img className={`${styles.arrow } ${styles.arrowLeft}`} src={ArrowLeft} alt="previous" onClick={moveToPrevious}></img>
+                    <img className={`${styles.arrow} ${styles.arrowRight}`} src={ArrowRight} alt="next" onClick={moveToNext}></img>
+                    <img className={`${styles.arrow} ${styles.arrowLeft}`} src={ArrowLeft} alt="previous" onClick={moveToPrevious}></img>
                     <p className={styles.countPicture}>{currentPicture + 1} / {imageSlider.length}</p>
                 </>
             }
         </div>
     )
-
-
 }

@@ -2,7 +2,6 @@
     margin-bottom: 2.5rem;
 }
 
-
 .descriptionTitle {
     background-color: #ff6060;
     color: white;
@@ -17,7 +16,6 @@
     font-size: 18px;
 }
 
-
 .chevron {
     transition: all 0.2s ease-in-out;
 }
@@ -29,7 +27,6 @@
 .chevronDown {
     transform: rotate(180deg);
 }
-
 
 .collapseContent {
     display: flex;
@@ -52,7 +49,6 @@
         opacity 0.5s ease-in-out,
         height 0.2s ease-in-out;
 }
-
 
 .collapseContentHidden {
     visibility: hidden;

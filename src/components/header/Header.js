@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import Logo from "../../assets/logo.png"
 import styles from "./Header.module.css"
 
+
 export default function Header() {
 
     const currentPage = window.location.pathname
@@ -22,6 +23,4 @@ export default function Header() {
         </div>
 
     )
-
-
 }
